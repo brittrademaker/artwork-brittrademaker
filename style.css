@@ -1,0 +1,152 @@
+:root {
+    --red: #CE1717;
+    --black: #090A0A;
+}
+
+body {
+    background-color: #FFF9E7;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 130px 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    grid-gap: 1px;
+    justify-items: center;
+}
+
+.grid_container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid > div {
+    padding: 1px;
+}
+
+.fill-red {
+    fill: var(--red);
+}
+
+.fill-black {
+    fill: var(--black);
+}
+
+/* Repeat 3 rows named "row", each between 120px and 1fr tall */
+
+/* Repeat 4 columns named "col", each 1fr wide */
+
+.grid-container {
+    display: grid;
+    grid-template: repeat(3, [row] minmax(150px, 1fr)) / repeat(6, [col] 1fr);
+    grid-gap: 2px;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6 {
+    align-items: center;
+    justify-items: center;
+    color: white;
+}
+
+.item-1 {
+    grid-column: col 2;
+    grid-row: row 1;
+}
+
+.item-2 {
+    grid-column: col 2;
+    grid-row: row 2;
+    align-self: center;
+}
+
+.item-3 {
+    grid-column: col 2;
+    grid-row: row 3;
+    z-index: 1;
+}
+
+.item-4 {
+    grid-column: col 2;
+    grid-row: row 4;
+}
+
+.item-5 {
+    grid-column: col 2;
+    grid-row: row 3 / span 3;
+    z-index: 2;
+    align-self: center;
+
+}
+
+.item-6 {
+    grid-column: col 2;
+    grid-row: row 5;
+}
+
+.item-7 {
+    grid-column: col 2;
+    grid-row: row 3 / span 5;
+    z-index: 2;
+    align-self: center;
+
+}
+
+.item-8 {
+    grid-column: col 2;
+    grid-row: row 6;
+}
+
+.item-9 {
+    grid-column: col 2;
+    grid-row: row / span 5;
+    z-index: 2;
+    align-self: center;
+
+}
+
+.item-10 {
+    grid-column: col 1;
+    grid-row: row /span 5;
+    z-index: 2;
+    align-self: center;
+}
+
+.item-11 {
+    grid-column: col 1;
+    grid-row: row 3 /span 3;
+    z-index: 2;
+    align-self: center;
+}
+
+.item-12 {
+    grid-column: col 1;
+    grid-row: row 3 /span 5;
+    z-index: 2;
+    align-self: center;
+}
+
+.item-13 {
+    grid-column: col 3;
+    grid-row: row /span 5;
+    z-index: 2;
+    align-self: center;
+}
+
+.item-14 {
+    grid-column: col 3;
+    grid-row: row 3 /span 3;
+    z-index: 2;
+    align-self: center;
+}
+
+.item-15 {
+    grid-column: col 3;
+    grid-row: row 3 /span 5;
+    z-index: 2;
+    align-self: center;
+}
