@@ -182,8 +182,8 @@ body {
     grid-column: col 1;
     grid-row: row 1 /span 9;
     margin-left: 100px;
-
-
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .item-25 {
@@ -191,7 +191,7 @@ body {
     grid-row: row 3 /span 2;
     align-self: center;
     justify-self: center;
-    margin-left: 50px;
+    margin-left: 77px;
 }
 
 .item-26 {
@@ -199,7 +199,7 @@ body {
     grid-row: row 3 /span 4;
     align-self: center;
     justify-self: center;
-    margin-left: 50px;
+    margin-left: 77px;
 }
 
 .item-27 {
@@ -207,13 +207,15 @@ body {
     grid-row: row 3 /span 7;
     align-self: center;
     justify-self: center;
-    margin-left: 50px;
+    margin-left: 77px;
 }
 
 .item-28 {
     grid-column: col 5;
     grid-row: row 1 /span 9;
-    margin-left: -40px;
+    margin-left: -29px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -222,6 +224,7 @@ body {
     grid-row: row 4;
     align-self: center;
     margin-top: -8px;
+    margin-left: 100px;
     z-index: 1;
 }
 
@@ -230,54 +233,99 @@ body {
     grid-row: row 5;
     align-self: center;
     margin-top: -8px;
-
+    margin-left: 100px;
 }
 
 .item-31 {
     grid-column: col 5;
     grid-row: row 3 /span 2;
     align-self: center;
-    margin-left: -30px;
+    margin-left: -20px;
 }
 
 .item-32 {
     grid-column: col 5;
     grid-row: row 3 /span 4;
     align-self: center;
-    margin-left: -30px;
+    margin-left: -20px;
 }
 
 .item-33 {
     grid-column: col 5;
     grid-row: row 3 /span 7;
     align-self: center;
-    margin-left: -30px;
+    margin-left: -20px;
 }
 
 .item-34 {
     grid-column: col 3;
     grid-row: row 3;
     align-self: top;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 .item-35 {
     grid-column: col 3;
     grid-row: row 6;
     align-self: end;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 }
 
 .item-36 {
     grid-column: col 4;
     grid-row: row 6;
     align-self: end;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 }
 
 .item-37 {
     grid-column: col 4;
     grid-row: row 3;
     align-self: start;
-    margin-top: 1px;
+    margin-top: 2px;
+}
+
+.item-38 {
+    grid-column: col 1;
+    grid-row: row 1;
+    margin-left: 86px;
+}
+
+.item-39 {
+    grid-column: col 1;
+    grid-row: row 8;
+    margin-left: 86px;
+    align-self: end;
+}
+
+.item-40 {
+    grid-column: col 5;
+    grid-row: row 1;
+    margin-left: -43px;
+}
+
+.item-41 {
+    grid-column: col 5;
+    grid-row: row 8;
+    margin-left: 86px;
+    align-self: end;
+    margin-left: -43px;
+}
+
+.item-42 {
+    grid-column: col 6;
+    grid-row: row 4;
+    align-self: end;
+    margin-left: -20px;
+    margin-bottom: 73px;
+    z-index: 2;
+}
+
+.item-43 {
+    grid-column: col 6;
+    grid-row: row 5;
+    align-self: end;
+    margin-left: -20px;
+    margin-bottom: 73px;
+    z-index: 2;
 }
