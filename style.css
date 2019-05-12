@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --red: #CE1717;
     --black: #090A0A;
@@ -24,20 +28,16 @@ body {
     grid-template: repeat(8, [row] 185px) / repeat(5, [col] 185px);
     grid-gap: 3px;
     justify-content: center;
+    margin: 50px;
 }
 
-/*
-.item-1,
-.item-2,
-.item-3,
-.item-4,
-.item-5,
-.item-6 {
-    align-items: center;
-    justify-items: center;
-    color: white;
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        justify-content: flex-start;
+        grid-template: repeat(8, [row] 185px) / repeat(5, [col] 185px);
+    }
+
 }
-*/
 
 .item-1 {
     grid-column: col 3;
@@ -66,7 +66,6 @@ body {
     grid-row: row 3 / span 2;
     z-index: 2;
     align-self: center;
-
 }
 
 .item-6 {
@@ -79,7 +78,6 @@ body {
     grid-row: row 3 / span 4;
     z-index: 2;
     align-self: center;
-
 }
 
 .item-8 {
@@ -155,8 +153,6 @@ body {
     grid-row: row 3 /span 7;
     align-self: center;
     margin-left: 135px;
-
-
 }
 
 .item-22 {
@@ -164,9 +160,6 @@ body {
     grid-row: row 3 /span 2;
     align-self: center;
     margin-left: 135px;
-
-
-
 }
 
 .item-23 {
@@ -174,8 +167,6 @@ body {
     grid-row: row 3 /span 4;
     align-self: center;
     margin-left: 135px;
-
-
 }
 
 .item-24 {
@@ -216,7 +207,6 @@ body {
     margin-left: -29px;
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
 
 .item-29 {
