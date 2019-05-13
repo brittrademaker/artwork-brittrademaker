@@ -19,6 +19,12 @@ body {
     fill: var(--black);
 }
 
+/*
+.item-1 svg path {
+    fill: red;
+}*/
+
+
 /* Repeat 3 rows named "row", each between 120px and 1fr tall */
 
 /* Repeat 4 columns named "col", each 1fr wide */
@@ -36,7 +42,6 @@ body {
         justify-content: flex-start;
         grid-template: repeat(8, [row] 185px) / repeat(5, [col] 185px);
     }
-
 }
 
 .item-1 {
