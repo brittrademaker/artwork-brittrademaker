@@ -344,38 +344,6 @@ body {
     z-index: 2;
 }
 
-.item-46 {
-    grid-column: col 1;
-    grid-row: row 2 /span 9;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.item-47 {
-    grid-column: col 1;
-    grid-row: row 3 /span 9;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.item-48 {
-    grid-column: col 1;
-    grid-row: row 4 /span 9;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.item-49 {
-    grid-column: col 1;
-    grid-row: row 5 /span 9;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .cls-3,
 .cls-9,
 .cls-12,
