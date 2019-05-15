@@ -214,7 +214,7 @@ body {
 }
 
 .item-29 {
-    grid-column: col 1 / span 5;
+    grid-column: col 1 / span 6;
     grid-row: row 4;
     align-self: center;
     margin-top: -8px;
@@ -223,7 +223,7 @@ body {
 }
 
 .item-30 {
-    grid-column: col 1 / span 5;
+    grid-column: col 1 / span 6;
     grid-row: row 5;
     align-self: center;
     margin-top: -8px;
@@ -310,7 +310,7 @@ body {
     grid-column: col 6;
     grid-row: row 4;
     align-self: end;
-    margin-left: -20px;
+    margin-left: -3px;
     margin-bottom: 73px;
     z-index: 2;
 }
@@ -319,7 +319,7 @@ body {
     grid-column: col 6;
     grid-row: row 5;
     align-self: end;
-    margin-left: -20px;
+    margin-left: -3px;
     margin-bottom: 73px;
     z-index: 2;
 }
