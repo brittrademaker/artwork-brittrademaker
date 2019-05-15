@@ -24,7 +24,6 @@ body {
     fill: red;
 }*/
 
-
 /* Repeat 3 rows named "row", each between 120px and 1fr tall */
 
 /* Repeat 4 columns named "col", each 1fr wide */
@@ -39,8 +38,8 @@ body {
 
 @media only screen and (max-width: 600px) {
     .grid-container {
-        justify-content: flex-start;
-        grid-template: repeat(8, [row] 185px) / repeat(5, [col] 185px);
+        overflow-x: auto;
+        margin: auto;
     }
 }
 
@@ -323,4 +322,43 @@ body {
     margin-left: -20px;
     margin-bottom: 73px;
     z-index: 2;
+}
+
+
+.item-44 {
+    grid-column: col 5;
+    grid-row: row 3;
+    align-self: start;
+    margin-left: -20px;
+    margin-top: 2px;
+    z-index: 2;
+}
+
+
+.item-45 {
+    grid-column: col 5;
+    grid-row: row 7;
+    align-self: start;
+    margin-left: -20px;
+    margin-top: -89px;
+    z-index: 2;
+}
+
+.cls-3,
+.cls-9,
+.cls-12,
+.cls-14 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 18s linear forwards;
+}
+
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
