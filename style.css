@@ -34,12 +34,15 @@ body {
     grid-gap: 3px;
     justify-content: center;
     margin: 60px;
+
 }
 
 @media only screen and (max-width: 600px) {
     .grid-container {
         overflow-x: auto;
         margin: 50px;
+        margin-left: -20px;
+
     }
 }
 
