@@ -33,13 +33,13 @@ body {
     grid-template: repeat(8, [row] 185px) / repeat(5, [col] 185px);
     grid-gap: 3px;
     justify-content: center;
-    margin: 50px;
+    margin: 60px;
 }
 
 @media only screen and (max-width: 600px) {
     .grid-container {
         overflow-x: auto;
-        margin: auto;
+        margin: 50px;
     }
 }
 
