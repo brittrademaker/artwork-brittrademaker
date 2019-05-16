@@ -34,6 +34,8 @@ body {
     grid-gap: 3px;
     justify-content: center;
     margin: 60px;
+    animation: moveup_down 3s infinite;
+
 
 }
 
@@ -41,8 +43,6 @@ body {
     .grid-container {
         overflow-x: auto;
         margin: 50px;
-        margin-left: -40px;
-
     }
 }
 
@@ -55,6 +55,8 @@ body {
     grid-column: col 3;
     grid-row: row 3;
     align-self: center;
+    width: 185px;
+    height: 185px;
 }
 
 .item-3 {
@@ -351,17 +353,34 @@ body {
 .cls-9,
 .cls-12,
 .cls-14 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 18s linear forwards;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: dash 3s infinite;
 }
 
 
 @keyframes dash {
-    from {
-        stroke-dashoffset: 1000;
+    0% {
+        stroke-dashoffset: 50;
     }
-    to {
+    50% {
         stroke-dashoffset: 0;
     }
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+
+@keyframes moveup_down {
+    0% {
+        margin-top: 30px;
+    }
+    50% {
+        margin-top: 50px;
+    }
+    100% {
+        margin-top: 30px;
+    }
+
 }
