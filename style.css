@@ -65,6 +65,14 @@ body {
 
 }
 
+.move_left {
+    transform: translateX(-188px);
+}
+
+.move_right {
+    transform: translateX(188px);
+}
+
 @keyframes rotate360 {
     from {
         transform: rotate(0deg);
@@ -84,6 +92,7 @@ body {
 .item-1 {
     grid-column: col 3;
     grid-row: row 1;
+    z-index: -1;
 }
 
 .item-2 {
@@ -92,17 +101,22 @@ body {
     align-self: center;
     width: 185px;
     height: 185px;
+    z-index: -1;
+
 }
 
 .item-3 {
     grid-column: col 3;
     grid-row: row 4;
-    z-index: 1;
+    z-index: -1;
+
 }
 
 .item-4 {
     grid-column: col 3;
     grid-row: row 5;
+    z-index: -1;
+
 }
 
 .item-5 {
@@ -115,6 +129,8 @@ body {
 .item-6 {
     grid-column: col 3;
     grid-row: row 6;
+    z-index: -1;
+
 }
 
 .item-7 {
@@ -127,6 +143,8 @@ body {
 .item-8 {
     grid-column: col 3;
     grid-row: row 8;
+    z-index: -1;
+
 }
 
 .item-9 {
@@ -185,11 +203,14 @@ body {
 .item-16 {
     grid-column: col 3;
     grid-row: row 2;
+    z-index: -1;
+
 }
 
 .item-17 {
     grid-column: col 3;
     grid-row: row 7;
+    z-index: -1;
 }
 
 .item-21 {
