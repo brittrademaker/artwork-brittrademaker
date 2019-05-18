@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 :root {
@@ -9,6 +11,9 @@
 
 body {
     background-color: #FFF9E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fill-red {
@@ -18,7 +23,8 @@ body {
 .fill-red:hover,
 .fill-red:active {
     fill: var(--black);
-    transition: fill .4s ease;
+    transition: fill .4s ease-in-out;
+    transition-delay: .4s;
 }
 
 .fill-black {
@@ -28,18 +34,9 @@ body {
 .fill-black:hover,
 .fill-black:active {
     fill: var(--red);
-    transition: fill .4s ease;
+    transition: fill .4s ease-in-out;
+    transition-delay: .4s;
 }
-
-
-/*
-.item-1 svg path {
-    fill: red;
-}*/
-
-/* Repeat 3 rows named "row", each between 120px and 1fr tall */
-
-/* Repeat 4 columns named "col", each 1fr wide */
 
 .grid-container {
     display: grid;
@@ -47,13 +44,34 @@ body {
     grid-gap: 3px;
     justify-content: center;
     margin: 60px;
-    animation: moveup_down 3s infinite;
+    animation: loadingState 2s forwards,
+    moveup_down 3s infinite;
+}
 
+@keyframes loadingState {
+    from {
+        grid-gap: 800px;
+    }
+
+
+    to {
+        grid-gap: 3px;
+    }
 
 }
 
 .scale_up {
-    grid-gap: 30px;
+    animation: rotate360 3s forwards;
+
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -365,6 +383,12 @@ body {
     margin-top: -89px;
     z-index: 2;
 }
+
+/*
+.moveItem {
+    transform: translateY(-95px);
+}
+*/
 
 .cls-3,
 .cls-9,
