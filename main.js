@@ -15,3 +15,10 @@ addReds.forEach(function (addRed) {
         addRed.classList.toggle('fill-black');
     });
 })
+
+var addScale = document.querySelector('.grid-container');
+document.addEventListener('keypress', function (e) {
+    if (e.keyCode === 32) {
+        addScale.classList.toggle('scale_up')
+    }
+})

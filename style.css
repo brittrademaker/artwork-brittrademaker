@@ -15,9 +15,22 @@ body {
     fill: var(--red);
 }
 
+.fill-red:hover,
+.fill-red:active {
+    fill: var(--black);
+    transition: fill .4s ease;
+}
+
 .fill-black {
     fill: var(--black);
 }
+
+.fill-black:hover,
+.fill-black:active {
+    fill: var(--red);
+    transition: fill .4s ease;
+}
+
 
 /*
 .item-1 svg path {
@@ -37,6 +50,10 @@ body {
     animation: moveup_down 3s infinite;
 
 
+}
+
+.scale_up {
+    grid-gap: 30px;
 }
 
 @media only screen and (max-width: 600px) {
