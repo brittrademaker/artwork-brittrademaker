@@ -41,6 +41,15 @@ nav {
     position: fixed;
 }
 
+@media only screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+}
+
 /* Start pop-up tutorial code 
 bron: https://codepen.io/brittrademaker/pen/EzvWYm */
 
@@ -159,7 +168,6 @@ a {
     font-family: sans-serif;
     font-weight: 600;
 }
-
 
 .keyboard > p:first-of-type {
     display: block;
