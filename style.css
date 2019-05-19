@@ -13,6 +13,7 @@ body {
     background-color: #FFF9E7;
     display: flex;
     justify-content: center;
+    scroll-snap-desitnation: 2400px 0%;
 }
 
 nav {
@@ -185,6 +186,7 @@ a {
     margin: 60px;
     animation: loadingState 2s forwards,
     moveup_down 3s infinite;
+
 }
 
 @keyframes loadingState {

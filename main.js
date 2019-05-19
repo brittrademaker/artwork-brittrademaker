@@ -154,8 +154,3 @@ document.addEventListener('keydown', function (e) {
         moveDown2.classList.toggle('move_down');
     }
 });
-
-$(document).ready(function () {
-    $(window).scrollTop($(window).height() / 2);
-    $(window).scrollLeft($(window).width() / 2);
-});
