@@ -67,6 +67,7 @@ body {
 
 .move_left {
     transform: translateX(-188px);
+
 }
 
 .move_right {
@@ -93,6 +94,8 @@ body {
     grid-column: col 3;
     grid-row: row 1;
     z-index: -1;
+    transition: transform .35s ease-in-out;
+
 }
 
 .item-2 {
@@ -102,6 +105,8 @@ body {
     width: 185px;
     height: 185px;
     z-index: -1;
+    transition: transform .35s ease-in-out;
+
 
 }
 
@@ -109,13 +114,15 @@ body {
     grid-column: col 3;
     grid-row: row 4;
     z-index: -1;
-
+    transition: transform .35s ease-in-out;
 }
 
 .item-4 {
     grid-column: col 3;
     grid-row: row 5;
     z-index: -1;
+    transition: transform .35s ease-in-out;
+
 
 }
 
@@ -130,6 +137,8 @@ body {
     grid-column: col 3;
     grid-row: row 6;
     z-index: -1;
+    transition: transform .35s ease-in-out;
+
 
 }
 
@@ -144,6 +153,7 @@ body {
     grid-column: col 3;
     grid-row: row 8;
     z-index: -1;
+    transition: transform .35s ease-in-out;
 
 }
 
@@ -204,6 +214,7 @@ body {
     grid-column: col 3;
     grid-row: row 2;
     z-index: -1;
+    transition: transform .35s ease-in-out;
 
 }
 
@@ -211,6 +222,7 @@ body {
     grid-column: col 3;
     grid-row: row 7;
     z-index: -1;
+    transition: transform .35s ease-in-out;
 }
 
 .item-21 {
@@ -246,32 +258,32 @@ body {
     grid-column: col 4;
     grid-row: row 3 /span 2;
     align-self: center;
-    justify-self: center;
-    margin-left: 77px;
+    justify-self: end;
+    margin-right: 1px;
 }
 
 .item-26 {
     grid-column: col 4;
     grid-row: row 3 /span 4;
     align-self: center;
-    justify-self: center;
-    margin-left: 77px;
+    justify-self: end;
+    margin-right: 1px;
 }
 
 .item-27 {
     grid-column: col 4;
     grid-row: row 3 /span 7;
     align-self: center;
-    justify-self: center;
-    margin-left: 77px;
+    justify-self: end;
+    margin-right: 1px;
 }
 
 .item-28 {
     grid-column: col 5;
     grid-row: row 1 /span 9;
-    margin-left: -29px;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 14px;
 }
 
 .item-29 {
@@ -295,21 +307,21 @@ body {
     grid-column: col 5;
     grid-row: row 3 /span 2;
     align-self: center;
-    margin-left: -20px;
+    margin-left: 40px;
 }
 
 .item-32 {
     grid-column: col 5;
     grid-row: row 3 /span 4;
     align-self: center;
-    margin-left: -20px;
+    margin-left: 40px;
 }
 
 .item-33 {
     grid-column: col 5;
     grid-row: row 3 /span 7;
     align-self: center;
-    margin-left: -20px;
+    margin-left: 40px;
 }
 
 .item-34 {
@@ -356,7 +368,6 @@ body {
 .item-40 {
     grid-column: col 5;
     grid-row: row 1;
-    margin-left: -43px;
 }
 
 .item-41 {
@@ -364,7 +375,7 @@ body {
     grid-row: row 8;
     margin-left: 86px;
     align-self: end;
-    margin-left: -43px;
+    margin-left: 0px;
 }
 
 .item-42 {
@@ -390,7 +401,7 @@ body {
     grid-column: col 5;
     grid-row: row 3;
     align-self: start;
-    margin-left: -20px;
+    margin-left: 40px;
     margin-top: 2px;
     z-index: 2;
 }
@@ -400,7 +411,7 @@ body {
     grid-column: col 5;
     grid-row: row 7;
     align-self: start;
-    margin-left: -20px;
+    margin-left: 40px;
     margin-top: -89px;
     z-index: 2;
 }
