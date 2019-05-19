@@ -220,7 +220,7 @@ a {
     .grid-container {
         margin: 50px;
         justify-content: flex-start;
-        margin-left: -60px;
+        margin-left: -100px;
     }
 
     @keyframes loadingState {
