@@ -26,6 +26,9 @@ nav {
     .btn {
         display: none;
     }
+    nav {
+        display: none;
+    }
 }
 
 /* Start pop-up tutorial code 
@@ -219,7 +222,7 @@ a {
 
     @keyframes loadingState {
         from {
-            grid-gap: 200px;
+            grid-gap: 80px;
         }
 
 
