@@ -12,8 +12,6 @@
 body {
     background-color: #FFF9E7;
     display: flex;
-    justify-content: center;
-    scroll-snap-desitnation: 2400px 0%;
 }
 
 nav {
@@ -186,6 +184,8 @@ a {
     margin: 60px;
     animation: loadingState 2s forwards,
     moveup_down 3s infinite;
+    justify-content: center;
+    margin: auto;
 
 }
 
@@ -219,6 +219,7 @@ a {
 @media only screen and (max-width: 600px) {
     .grid-container {
         margin: 50px;
+        justify-content: flex-start;
     }
 
     @keyframes loadingState {
