@@ -15,28 +15,6 @@ body {
     justify-content: center;
 }
 
-/*
-ul {
-    position: fixed;
-    right: 5%;
-    list-style-type: none;
-    background-color: var(--black);
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-
-}
-
-li a {
-    color: #FFF9E7;
-    font-size: 25px;
-    margin-left: -23px;
-    text-decoration: none;
-}
-*/
-
 nav {
     position: fixed;
 }
@@ -66,7 +44,6 @@ bron: https://codepen.io/brittrademaker/pen/EzvWYm */
     transition: all 0.3s;
     text-align: center;
     font-family: 'Playfair Display', serif;
-
 }
 
 .modal-window:target {
@@ -75,7 +52,7 @@ bron: https://codepen.io/brittrademaker/pen/EzvWYm */
 }
 
 .modal-window > div {
-    width: 400px;
+    width: 550px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,7 +62,6 @@ bron: https://codepen.io/brittrademaker/pen/EzvWYm */
     background: var(--black);
     color: #FFF9E7;
     font-weight: 400;
-
 }
 
 .modal-window header {
@@ -99,7 +75,6 @@ bron: https://codepen.io/brittrademaker/pen/EzvWYm */
     font-style: italic;
     font-weight: 400;
     letter-spacing: 0.5px;
-
 }
 
 .modal-close {
@@ -150,9 +125,8 @@ a {
 
 /* end pop up tutorial */
 
-.keybaord {
-    display: flex;
-    justify-content: center;
+.keyboard {
+    padding-top: 20px;
 }
 
 .keyboard > p {
@@ -227,6 +201,14 @@ a {
 
 .move_right {
     transform: translateX(188px);
+}
+
+.move_up {
+    transform: translateY(-190px);
+}
+
+.move_down {
+    transform: translateY(190px);
 }
 
 @media only screen and (max-width: 600px) {
@@ -357,10 +339,9 @@ a {
 .item-16 {
     grid-column: col 3;
     grid-row: row 2;
-    transition: transform .35s ease-in-out;
     width: 180px;
     height: 180px;
-
+    transition: transform .35s ease-in-out;
 }
 
 .item-17 {
@@ -439,6 +420,7 @@ a {
     margin-top: -8px;
     margin-left: 100px;
     z-index: 1;
+    transition: transform .35s ease-in-out;
 }
 
 .item-30 {
@@ -447,6 +429,7 @@ a {
     align-self: center;
     margin-top: -8px;
     margin-left: 100px;
+    transition: transform .35s ease-in-out;
 }
 
 .item-31 {
@@ -529,6 +512,8 @@ a {
     margin-left: -3px;
     margin-bottom: 73px;
     z-index: 2;
+    transition: transform .35s ease-in-out;
+
 }
 
 .item-43 {
@@ -538,6 +523,8 @@ a {
     margin-left: -3px;
     margin-bottom: 73px;
     z-index: 2;
+    transition: transform .35s ease-in-out;
+
 }
 
 

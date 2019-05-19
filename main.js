@@ -126,3 +126,31 @@ document.addEventListener('keydown', function (e) {
         moveRight8.classList.toggle('move_right');
     }
 });
+
+var moveUp = document.querySelector('.item-29');
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode === 87) {
+        moveUp.classList.toggle('move_up');
+    }
+});
+
+var moveUp2 = document.querySelector('.item-42');
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode === 87) {
+        moveUp2.classList.toggle('move_up');
+    }
+});
+
+var moveDown = document.querySelector('.item-30');
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode === 83) {
+        moveDown.classList.toggle('move_down');
+    }
+});
+
+var moveDown2 = document.querySelector('.item-43');
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode === 83) {
+        moveDown2.classList.toggle('move_down');
+    }
+});
