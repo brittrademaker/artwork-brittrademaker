@@ -222,7 +222,7 @@ a {
 
     @keyframes loadingState {
         from {
-            grid-gap: 80px;
+            grid-gap: 20px;
         }
 
 
