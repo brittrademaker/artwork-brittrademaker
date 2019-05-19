@@ -216,6 +216,17 @@ a {
         overflow-x: auto;
         margin: 50px;
     }
+
+    @keyframes loadingState {
+        from {
+            grid-gap: 200px;
+        }
+
+
+        to {
+            grid-gap: 3px;
+        }
+    }
 }
 
 .item-1 {
