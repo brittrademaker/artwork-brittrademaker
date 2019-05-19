@@ -218,9 +218,10 @@ a {
 
 @media only screen and (max-width: 600px) {
     .grid-container {
-        margin: 50px;
+        margin: 0px;
         justify-content: flex-start;
-        margin-left: -100px;
+        /*        margin-left: -100px;
+        */
     }
 
     @keyframes loadingState {
