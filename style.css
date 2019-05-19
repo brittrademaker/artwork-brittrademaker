@@ -13,11 +13,162 @@ body {
     background-color: #FFF9E7;
     display: flex;
     justify-content: center;
+}
+
+/*
+ul {
+    position: fixed;
+    right: 5%;
+    list-style-type: none;
+    background-color: var(--black);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
     align-items: center;
+
+}
+
+li a {
+    color: #FFF9E7;
+    font-size: 25px;
+    margin-left: -23px;
+    text-decoration: none;
+}
+*/
+
+nav {
+    position: fixed;
+}
+
+/* Start pop-up tutorial code 
+bron: https://codepen.io/brittrademaker/pen/EzvWYm */
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(9, 10, 10, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: var(--black);
+    color: #FFF9E7;
+    font-weight: 400;
+
+}
+
+.modal-window header {
+    font-weight: bold;
+}
+
+.modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+    color: #FFF9E7;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+}
+
+.modal-close {
+    color: #FFF9E7;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    color: #FFF9E7;
+    font-style: italic;
+    letter-spacing: 0.5px;
+
+}
+
+.modal-close:hover {
+    color: #E8DEBD;
+}
+
+a {
+    color: #FFF9E7;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    right: 2%;
+}
+
+.modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: var(--black);
+    padding: 1em 1.5em;
+    border-radius: 50%;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* end pop up tutorial */
+
+.keybaord {
+    display: flex;
+    justify-content: center;
+}
+
+.keyboard > p {
+    background-color: #FFF9E7;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid #E8DEBD;
+    color: var(--black);
+    margin-top: 3px;
+    padding-top: 13px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+.keyboard > p:first-of-type {
+    display: block;
+    margin: auto;
 }
 
 .fill-red {
     fill: var(--red);
+    background-color: var(--red);
 }
 
 .fill-red:hover,
@@ -25,10 +176,12 @@ body {
     fill: var(--black);
     transition: fill .4s ease-in-out;
     transition-delay: .4s;
+    cursor: pointer;
 }
 
 .fill-black {
     fill: var(--black);
+    background-color: var(--black);
 }
 
 .fill-black:hover,
@@ -36,6 +189,7 @@ body {
     fill: var(--red);
     transition: fill .4s ease-in-out;
     transition-delay: .4s;
+    cursor: pointer;
 }
 
 .grid-container {
@@ -57,30 +211,14 @@ body {
     to {
         grid-gap: 3px;
     }
-
-}
-
-.scale_up {
-    animation: rotate360 3s forwards;
-
 }
 
 .move_left {
     transform: translateX(-188px);
-
 }
 
 .move_right {
     transform: translateX(188px);
-}
-
-@keyframes rotate360 {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -93,26 +231,23 @@ body {
 .item-1 {
     grid-column: col 3;
     grid-row: row 1;
-    z-index: -1;
     transition: transform .35s ease-in-out;
-
 }
 
 .item-2 {
     grid-column: col 3;
     grid-row: row 3;
-    align-self: center;
-    width: 185px;
-    height: 185px;
+    width: 180px;
+    height: 180px;
     z-index: -1;
     transition: transform .35s ease-in-out;
-
-
 }
 
 .item-3 {
     grid-column: col 3;
     grid-row: row 4;
+    width: 180px;
+    height: 180px;
     z-index: -1;
     transition: transform .35s ease-in-out;
 }
@@ -120,6 +255,8 @@ body {
 .item-4 {
     grid-column: col 3;
     grid-row: row 5;
+    width: 180px;
+    height: 180px;
     z-index: -1;
     transition: transform .35s ease-in-out;
 
@@ -137,9 +274,9 @@ body {
     grid-column: col 3;
     grid-row: row 6;
     z-index: -1;
+    width: 180px;
+    height: 180px;
     transition: transform .35s ease-in-out;
-
-
 }
 
 .item-7 {
@@ -152,9 +289,9 @@ body {
 .item-8 {
     grid-column: col 3;
     grid-row: row 8;
-    z-index: -1;
+    width: 180px;
+    height: 180px;
     transition: transform .35s ease-in-out;
-
 }
 
 .item-9 {
@@ -162,7 +299,6 @@ body {
     grid-row: row 3 / span 7;
     z-index: 2;
     align-self: center;
-
 }
 
 .item-10,
@@ -213,15 +349,17 @@ body {
 .item-16 {
     grid-column: col 3;
     grid-row: row 2;
-    z-index: -1;
     transition: transform .35s ease-in-out;
+    width: 180px;
+    height: 180px;
 
 }
 
 .item-17 {
     grid-column: col 3;
     grid-row: row 7;
-    z-index: -1;
+    width: 180px;
+    height: 180px;
     transition: transform .35s ease-in-out;
 }
 
@@ -328,7 +466,6 @@ body {
     grid-column: col 3;
     grid-row: row 3;
     align-self: top;
-    margin-top: 2px;
 }
 
 .item-35 {
@@ -349,7 +486,6 @@ body {
     grid-column: col 4;
     grid-row: row 3;
     align-self: start;
-    margin-top: 2px;
 }
 
 .item-38 {
@@ -402,7 +538,6 @@ body {
     grid-row: row 3;
     align-self: start;
     margin-left: 40px;
-    margin-top: 2px;
     z-index: 2;
 }
 

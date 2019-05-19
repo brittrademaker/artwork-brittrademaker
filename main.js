@@ -6,7 +6,6 @@ addBlacks.forEach(function (addBlack) {
     });
 });
 
-
 var addReds = document.querySelectorAll('.fill-black');
 addReds.forEach(function (addRed) {
     console.log('addRed', addRed)
