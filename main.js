@@ -154,3 +154,21 @@ document.addEventListener('keydown', function (e) {
         moveDown2.classList.toggle('move_down');
     }
 });
+
+//https://www.youtube.com/watch?v=_A5eVOIqGLU
+const pressed = [];
+const secretCode = 'invert';
+
+var invert = document.querySelector('body');
+window.addEventListener('keyup', (e) => {
+    console.log(e.key);
+    pressed.push(e.key);
+    pressed.splice(-secretCode.lenght - 2, pressed.lenght - secretCode.lenght);
+    if (pressed.join('').includes(secretCode)) {
+        console.log('DING DING');
+        invert.classList.add('invert');
+        //        cornify_add();
+
+    }
+    console.log(pressed);
+})

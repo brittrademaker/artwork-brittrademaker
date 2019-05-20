@@ -15,6 +15,11 @@ body {
     justify-content: center;
 }
 
+.invert {
+    filter: invert(100%);
+    background-color: black;
+}
+
 nav {
     position: fixed;
 }
@@ -186,8 +191,6 @@ a {
     animation: loadingState 2s forwards,
     moveup_down 3s infinite;
     justify-content: center;
-    /*    margin-left: 16%;
-    */
 }
 
 @keyframes loadingState {
@@ -222,6 +225,7 @@ a {
         margin: 50px;
         justify-content: flex-start;
         margin-left: -100px;
+        padding: 10px;
     }
 
     body {
@@ -253,6 +257,8 @@ a {
     height: 180px;
     z-index: -1;
     transition: transform .35s ease-in-out;
+    transform-origin: center center;
+
 }
 
 .item-3 {
@@ -271,8 +277,6 @@ a {
     height: 180px;
     z-index: -1;
     transition: transform .35s ease-in-out;
-
-
 }
 
 .item-5 {
@@ -413,6 +417,15 @@ a {
     }
 }
 
+@keyframes drawFromSide {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
 .item-25 {
     grid-column: col 4;
     grid-row: row 3 /span 2;
@@ -455,6 +468,8 @@ a {
     margin-left: 100px;
     z-index: 1;
     transition: transform .35s ease-in-out;
+    animation: drawFromSide 2s forwards;
+
 }
 
 .item-30 {
@@ -464,6 +479,7 @@ a {
     margin-top: -8px;
     margin-left: 100px;
     transition: transform .35s ease-in-out;
+    animation: drawFromSide 2s forwards;
 }
 
 .item-31 {
