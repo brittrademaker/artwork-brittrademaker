@@ -12,8 +12,7 @@
 body {
     background-color: #FFF9E7;
     display: flex;
-
-}
+    justify-content: center;}
 
 nav {
     position: fixed;
@@ -183,11 +182,11 @@ a {
     grid-gap: 3px;
     justify-content: center;
     margin: 60px;
-
     animation: loadingState 2s forwards,
     moveup_down 3s infinite;
     justify-content: center;
-
+    /*    margin-left: 16%;
+    */
 }
 
 @keyframes loadingState {
@@ -397,6 +396,16 @@ a {
     margin-left: 100px;
     margin-top: 30px;
     margin-bottom: 30px;
+    animation: drawFromTop 2s forwards;
+}
+
+@keyframes drawFromTop {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 1440px;
+    }
 }
 
 .item-25 {
@@ -429,6 +438,8 @@ a {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 14px;
+    animation: drawFromTop 2s forwards;
+
 }
 
 .item-29 {
