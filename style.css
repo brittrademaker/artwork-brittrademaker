@@ -12,7 +12,8 @@
 body {
     background-color: #FFF9E7;
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+}
 
 nav {
     position: fixed;
@@ -221,6 +222,10 @@ a {
         margin: 50px;
         justify-content: flex-start;
         margin-left: -100px;
+    }
+
+    body {
+        justify-content: initial;
     }
 
     @keyframes loadingState {
