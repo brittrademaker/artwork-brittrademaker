@@ -20,6 +20,17 @@ body {
     background-color: black;
 }
 
+#open-modal > div > p:nth-of-type(2) {
+    font-size: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+p:nth-of-type(2) span {
+    font-weight: 600;
+    font-style: italic;
+}
+
 nav {
     position: fixed;
 }
@@ -88,7 +99,6 @@ bron: https://codepen.io/brittrademaker/pen/EzvWYm */
 .modal-close {
     color: #FFF9E7;
     line-height: 50px;
-    font-size: 80%;
     position: absolute;
     right: 0;
     text-align: center;
@@ -129,6 +139,12 @@ a {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 800;
+}
+
+.btn:hover {
+    background-color: var(--red);
+    transition-delay: .4s;
+    transition: background-color .4s ease-in-out;
 }
 
 /* end pop up tutorial */
@@ -248,6 +264,7 @@ a {
     grid-column: col 3;
     grid-row: row 1;
     transition: transform .35s ease-in-out;
+    transition: .1s .1s;
 }
 
 .item-2 {
@@ -258,6 +275,8 @@ a {
     z-index: -1;
     transition: transform .35s ease-in-out;
     transform-origin: center center;
+    transition: .3s .3s;
+
 
 }
 
@@ -268,6 +287,8 @@ a {
     height: 180px;
     z-index: -1;
     transition: transform .35s ease-in-out;
+    transition: .4s .4s;
+
 }
 
 .item-4 {
@@ -277,6 +298,8 @@ a {
     height: 180px;
     z-index: -1;
     transition: transform .35s ease-in-out;
+    transition: .5s .5s;
+
 }
 
 .item-5 {
@@ -293,6 +316,7 @@ a {
     width: 180px;
     height: 180px;
     transition: transform .35s ease-in-out;
+    transition: .6s .6s;
 }
 
 .item-7 {
@@ -308,6 +332,7 @@ a {
     width: 180px;
     height: 180px;
     transition: transform .35s ease-in-out;
+    transition: .9s .9s;
 }
 
 .item-9 {
@@ -368,6 +393,8 @@ a {
     width: 180px;
     height: 180px;
     transition: transform .35s ease-in-out;
+    transition: .2s .2s;
+
 }
 
 .item-17 {
@@ -376,6 +403,8 @@ a {
     width: 180px;
     height: 180px;
     transition: transform .35s ease-in-out;
+    transition: .7s .7s;
+
 }
 
 .item-21 {

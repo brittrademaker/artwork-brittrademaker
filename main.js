@@ -6,6 +6,7 @@ addBlacks.forEach(function (addBlack) {
     });
 });
 
+//addReds.forEach regel geschreven door Jesper Honders om de fill black boven de fill red te zetten. Classlist toggle en queryselector zijn wel zelf geschreven
 var addReds = document.querySelectorAll('.fill-black');
 addReds.forEach(function (addRed) {
     console.log('addRed', addRed)
@@ -15,6 +16,7 @@ addReds.forEach(function (addRed) {
     });
 });
 
+//variable, queryselector voor css class function met een event en een toggle van een class als de keycode gelijk is aan 65
 var moveLeft = document.querySelector('.item-1');
 document.addEventListener('keydown', function (e) {
     if (e.keyCode === 65) {
@@ -155,7 +157,7 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-//https://www.youtube.com/watch?v=_A5eVOIqGLU
+//Keypress van een woord door https://www.youtube.com/watch?v=_A5eVOIqGLU
 const pressed = [];
 const secretCode = 'invert';
 
