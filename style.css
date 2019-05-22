@@ -1,3 +1,5 @@
+/* Om onderzoek te doen heb ik veel gebruik gemaakt van de website https://css-tricks.com, deze artikelen heb ik gelezen maar niet letterlijk overgenomen. Echter kan het wel zijn dat sommige waardes misschien overeen komen */
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -8,6 +10,9 @@
     --red: #CE1717;
     --black: #090A0A;
 }
+
+
+/* Scroll to center page: https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo */
 
 body {
     background-color: #FFF9E7;
@@ -589,7 +594,6 @@ a {
     margin-bottom: 73px;
     z-index: 2;
     transition: transform .35s ease-in-out;
-
 }
 
 .item-43 {
@@ -618,12 +622,6 @@ a {
     margin-top: -89px;
     z-index: 2;
 }
-
-/*
-.moveItem {
-    transform: translateY(-95px);
-}
-*/
 
 .cls-3,
 .cls-9,
@@ -656,5 +654,4 @@ a {
     100% {
         margin-top: 30px;
     }
-
 }
