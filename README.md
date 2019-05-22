@@ -10,6 +10,8 @@ Ik ben het trotst op mijn grid en mijn javascript. Dit is iets waar ik altijd ve
 
 Ik heb gebruik gemaakt van grid wat vrij nieuw is, :nth-of-type classes, variable kleuren en stroke-dashoffset om mijn lijnen als het ware te "tekenen".
 
+Ook heb ik verschillende hovers gebruikt op de fill elementen en op het "i" icoon.
+
 # Hoe werkt het?
 
 Ik heb rechts bovenin mijn kunstwerk een "i" met de uitleg van de verschillende toetsen en het geheime codewoord.
